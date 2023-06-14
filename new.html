@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calcultor">
+            <form>
+                <div class="display">
+                    <input type="text" id="display" name="display">
+                </div>
+
+                <!-- Buttons -->
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay(this)">
+                    <input type="button" value="DEL" onclick="del(this)">
+                    <input type="button" value="." onclick="updateDisplay(this)">
+                    <input type="button" value="/" onclick="updateDisplay(this)"> 
+                    </div>
+                <div>
+                    <input type="button" value="1" onclick="updateDisplay(this)">
+                    <input type="button" value="2" onclick="updateDisplay(this)">
+                    <input type="button" value="3" onclick="updateDisplay(this)">
+                    <input type="button" value="-" onclick="updateDisplay(this)">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="updateDisplay(this)">
+                    <input type="button" value="5" onclick="updateDisplay(this)">
+                    <input type="button" value="6" onclick="updateDisplay(this)">
+                    <input type="button" value="+" onclick="updateDisplay(this)">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="updateDisplay(this)">
+                    <input type="button" value="8" onclick="updateDisplay(this)">
+                    <input type="button" value="9" onclick="updateDisplay(this)">
+                    <input type="button" value="*" onclick="updateDisplay(this)">
+                </div>
+
+                <div>
+                    <input type="button" value="0" onclick="updateDisplay(this)">
+                    <input type="button" value="00" onclick="updateDisplay(this)">
+                    <input id='equal' type="button" value="=" onclick="calculate()">
+                </div>
+                <div>
+                    <input type="button" value="π" onclick="updateDisplay(this)">
+                    <input type="button" value="&#178;" onclick="updateDisplay(this)">
+                </div>
+                
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
